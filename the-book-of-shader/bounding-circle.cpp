@@ -16,10 +16,10 @@ void main() {
     float c1 = step(c1_r, c1_d);
     
     float shrink_speed = (abs(sin(u_time)) / 400.0);
-	float c2_r = abs(sin(u_time * shrink_speed)*0.1);
+    float c2_r = abs(sin(u_time * shrink_speed)*0.1);
     float offset = 0.5;
     float sin = offset + sin(u_time)*0.3;
-	float cos = offset + cos(u_time)*0.3;
+    float cos = offset + cos(u_time)*0.3;
     vec2 c2_center = vec2(sin,cos);
     float c2_d = distance(c2_center, st);
     float c2 = step(c2_r, c2_d);
